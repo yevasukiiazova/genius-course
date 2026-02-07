@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modern Bakery</title>
-
+    <!-- Fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <!-- Styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -32,20 +39,21 @@
 
       <section id="traditions-section">
         <ul class="advantages-list">
-          <li>High demand in the market</li>
-          <li>Budget-friendly formats</li>
-          <li>Experienced management team</li>
+          <li class="advantages-item">High demand in the market</li>
+          <li class="advantages-item">Budget-friendly formats</li>
+          <li class="advantages-item">Experienced management team</li>
         </ul>
         <h2 class="section-title">New Format</h2>
-        <p>
-          <span>shop bakery</span> - is a bakery that has taken the best of
-          everything while preserving the taste of traditional baked goods and
-          the natural quality of the ingredients.
+        <p class="traditions-text">
+          <span class="brand uppercase">shop bakery</span> - is a bakery that
+          has taken the best of everything while preserving the taste of
+          traditional baked goods and the natural quality of the ingredients.
         </p>
-        <p>
+        <p class="traditions-text">
           We work like the most well-known chains —
-          <span>your order is ready in just 5 minutes</span>. Plus, our bakeries
-          feature stylish designand a high level of customer service!
+          <span class="brand">your order is ready in just 5 minutes</span>.
+          Plus, our bakeries feature stylish designand a high level of customer
+          service!
         </p>
         <img src="./images/baker-man.jpg" alt="Man smiling at bread" />
       </section>
@@ -55,7 +63,7 @@
         <ul>
           <li>
             <article>
-              <h3>Anastasia</h3>
+              <h3 class="chef-title">Anastasia</h3>
               <p>Hi, I’m Nastya!</p>
               <p>
                 For the past 10 years, I’ve been bringing interesting and
@@ -66,7 +74,7 @@
           </li>
           <li>
             <article>
-              <h3>Vlad</h3>
+              <h3 class="chef-title">Vlad</h3>
               <p>Hi, I’m Vlad!</p>
               <p>
                 I’ve been working as a pastry chef for 18 years. SHOP BAKERY is
@@ -84,17 +92,38 @@
         <ul>
           <li>
             <article>
-              <h3>Walrus</h3>
+              <h3 class="format-title">Walrus</h3>
+              <div class="format-text">
+                <p>Area: up to 120 m²</p>
+                <p>Menu: expanded menu</p>
+                <p>
+                  Staff: 2 sales cashiers, 2 bakers, 2 assistant bakers, 2
+                  servers / general staff
+                </p>
+                <p>Seating: available</p>
+              </div>
             </article>
           </li>
           <li>
             <article>
-              <h3>Horseshoe</h3>
+              <h3 class="format-title">Horseshoe</h3>
+              <div class="format-text">
+                <p>Area: up to 25 m²</p>
+                <p>Menu: most popular menu items</p>
+                <p>Staff: 2 sales cashiers, 2 bakers, 1 assistant baker</p>
+                <p>Seating: not available</p>
+              </div>
             </article>
           </li>
           <li>
             <article>
-              <h3>Handlebar</h3>
+              <h3 class="format-title">Handlebar</h3>
+              <div class="format-text">
+                <p>Area: up to 15 m²</p>
+                <p>Menu: most popular menu items</p>
+                <p>Staff: 1 sales associate, 1 baker, 1 assistant baker</p>
+                <p>Seating: not available</p>
+              </div>
             </article>
           </li>
         </ul>
@@ -102,6 +131,7 @@
 
       <section id="contacts-section">
         <h2 class="section-title">Join our Bakery</h2>
+        <p>Fill out the form so we can get in touch with you!</p>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636289098733!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2sSichovykh%20Striltsiv%20St%2C%2054%2C%20Kyiv%2C%20Ukraine%2C%2002000!5e0!3m2!1sen!2sca!4v1769730802900!5m2!1sen!2sca"
           width="600"
@@ -119,20 +149,30 @@
           <img src="./images/logo.svg" alt="Modern Bakery Logo" />
         </a>
         <ul>
-          <li><a href="#traditions-section">Our traditions </a></li>
-          <li><a href="#chefs-section">Chefs</a></li>
-          <li><a href="#formats-section">Formats</a></li>
-          <li><a href="#contacts-section">Contacts</a></li>
+          <li>
+            <a class="link" href="#traditions-section">Our traditions </a>
+          </li>
+          <li><a class="link" href="#chefs-section">Chefs</a></li>
+          <li><a class="link" href="#formats-section">Formats</a></li>
+          <li><a class="link" href="#contacts-section">Contacts</a></li>
         </ul>
       </nav>
       <address>
         <ul>
-          <li><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
           <li>
-            <a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
+            <a class="address-link" href="tel:+380960000007"
+              >+ 38 (096) 000 00 07</a
+            >
           </li>
           <li>
-            <a href="https://maps.app.goo.gl/K4gG4Y6w7ud79tsq6"
+            <a class="address-link" href="mailto:shopbakery@gmail.com"
+              >shopbakery@gmail.com</a
+            >
+          </li>
+          <li>
+            <a
+              class="address-link"
+              href="https://maps.app.goo.gl/K4gG4Y6w7ud79tsq6"
               >Україна, м. Київ, вул. Січових Стрільців 54</a
             >
           </li>
@@ -143,12 +183,9 @@
             <a href="#"> <!--inst icon--> </a>
           </li>
         </ul>
-        <a href="#" target="_blank">Privacy Policy</a>
-        <p>&copy; 2026 Data is protected</p>
+        <a class="address-link" href="#" target="_blank">Privacy Policy</a>
+        <p class="address-copyright">&copy; 2026 Data is protected</p>
       </address>
     </footer>
   </body>
-</html>
-
-</body>
 </html>
